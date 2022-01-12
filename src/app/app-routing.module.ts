@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { Page404Component } from './page404/page404.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { Grafica01Component } from './pages/grafica01/grafica01.component';
-import { Page404Component } from './pages/page404/page404.component';
+
 import { PagesComponent } from './pages/pages.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 
