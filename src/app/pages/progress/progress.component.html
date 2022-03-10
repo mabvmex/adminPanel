@@ -4,8 +4,7 @@
             <div class="card-body">
                 <h4 class="card-title"> Progreso</h4>
                 <div class="m-t-20">
-                    <div class="progress-bar bg-primary active progress-bar-striped">
-
+                    <div class="progress-bar bg-primary active progress-bar-striped" style="height: 5px;" role="progressbar" [style.width]="getPorcentaje">
                     </div>
                 </div>
             </div>
@@ -19,13 +18,13 @@
             <div class="card-body">
 
                 <div class="input-group">
-                    <span class="input-group-btn"> <button class="btn btn-primary" type="button">
+                    <span class="input-group-btn"> <button class="btn btn-primary" type="button" (click)="cambiarValor(-5)">
               <i class="fa fa-minus"></i>
             </button>
           </span>
-                    <input type="text" class="form-control" placeholder="Product name">
+                    <input type="number" class="form-control" placeholder="Product name" [(ngModel)]="progreso">
                     <span class="input-group-btn">
-            <button class="btn btn-primary" type="button">
+            <button class="btn btn-primary" type="button" (click)="cambiarValor(5)">
               <i class="fa fa-plus"></i>
             </button>
           </span>
@@ -40,7 +39,7 @@
             <div class="card-body">
                 <div class="input-group">
                     <span class="input-group-btn">
-            <button class="btn btn-primary" type="button">
+            <button class="btn btn-primary" type="button" >
               <i class="fa fa-minus"></i>
             </button>
           </span>
